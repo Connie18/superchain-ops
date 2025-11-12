@@ -1,32 +1,24 @@
 # Jovian Betanet on u17
 l2chains = [
-    {name = "jovian-beta-0", chainId = 420110019}
+    {name = "Soneium devnet", chainId = 179182},
 ]
 
-# Addresses for this task can be found here: https://github.com/ethereum-optimism/devnets/pull/170/files
-fallbackAddressesJsonPath = "src/tasks/sep/038-U17-op-betanets/addresses.json"
+fallbackAddressesJsonPath = "src/tasks/sep/041-soneium-devnet-upgrade-v500/addresses.json"
 templateName = "OPCMUpgradeV500"
 allowOverwrite = ["SuperchainConfig", "SuperchainConfigProxyAdmin"]
 
 [[opcmUpgrades]]
-chainId = 420110019
-# Jovian prestate:
-absolutePrestate = "0x03caa1871bb9fe7f9b11217c245c16e4ded33367df5b3ccb2c6d0a847a217d1b"  # prestates."1.8.0-rc.4" https://www.notion.so/oplabs/U17-2a1f153ee162804f94d0c10d0a1e1258
-expectedValidationErrors = "PROXYA-10,SYSCON-140,DF-30,PDDG-DWETH-30,PDDG-130,PLDG-10"
-# PROXYA-10: ProxyAdmin owner is not set to the Standard PAO multisig
-# SYSCON-140: The SystemConfig.SuperchainConfig is not the standard one
-# DF-30: DisputeGameFactory owner is not set to the Standard PAO multisig
-# PDDG-DWETH-30: Permissioned dispute game delayed WETH owner mismatch
-# PDDG-130: The PDDG Challenger is not the standard one
-# PLDG-10: Permissionless dispute game implementation not found. Expected as it's a permissioned chain.
+chainId = 179182
+absolutePrestate = "0x038512e02c4c3f7bdaec27d00edf55b7155e0905301e1a88083e4e0a6764d54c"
+expectedValidationErrors = "OVERRIDES-L1PAOMULTISIG,OVERRIDES-CHALLENGER"
 
 [addresses]
-OPCM = "0xc69e4c24db479191676611a25d977203c3bdca62"  # Source: https://github.com/ethereum-optimism/superchain-registry/pull/1141/files
-StandardValidatorV500 = "0x757bfa3aaabce60112cee3239dcd05b5f6efae3a"  # Source: validator from OPCM above, can be checked on etherscan
-SuperchainConfig = "0x1FdE152a794701A86B38f8f657E591C3c7979Cde"  # Source: https://github.com/ethereum-optimism/devnets/pull/170/files#diff-0c8aaa2fab40915fae70ed0b990ef55226c132d348477e314457d759961b5c59R7
-SuperchainConfigProxyAdmin = "0xFf112a58983aD809EE998d6A7652988fC93228E8"  # Source: ProxyAdmin from the contract above https://sepolia.etherscan.io/address/0x1FdE152a794701A86B38f8f657E591C3c7979Cde#readProxyContract
+OPCM = "0x704d236a529d7488669ff0627988e9ff7f3a1ecf"
+StandardValidatorV500 = "0x60c6a1b11f6e7a157495a09c7d84cba4a71e0b71"
+SuperchainConfig = "0xc92831eB4544053Dc330AB2cD4164e1EB3157A8E"
+SuperchainConfigProxyAdmin = "0x664e70e3d58eee0eef8b6b192015f43ab7323007"
 
 [stateOverrides]
-0xe934Dc97E347C6aCef74364B50125bb8689c40ff = [
-    {key = "0x0000000000000000000000000000000000000000000000000000000000000005", value = 47}
+0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F = [
+    {key = "0x0000000000000000000000000000000000000000000000000000000000000005", value = 41}
 ]

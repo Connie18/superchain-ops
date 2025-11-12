@@ -1,0 +1,219 @@
+041-soneium-devnet-upgrade-v500 % SIMULATE_WITHOUT_LEDGER=1 just --dotenv-path $(pwd)/.env simulate
+                              
+        superchain-ops        
+                              
+Simulating without ledger using first owner from safe 0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F: 0x1edae2A7C9ECF37319D4E113588d946e9901F5ea
+⏳ Simulating task: 041-soneium-devnet-upgrade-v500 for network: 'sep' on default safes
+
+[⠒] Compiling...
+No files changed, compilation skipped
+Script ran successfully.
+
+== Logs ==
+  [INFO] SuperchainAddressRegistry: Chain Soneium devnet not found in superchain registry, using fallback path src/tasks/sep/041-soneium-devnet-upgrade-v500/addresses.json
+  Passing 16700000 gas to execTransaction (from env or gasleft)
+  
+  
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                   WELCOME TO SUPERCHAIN-OPS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+  ATTENTION TASK DEVELOPERS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  To properly document the task state changes, please follow these steps:
+  1. Copy and paste the state changes printed below into the VALIDATION.md file.
+  2. For each task, write a thorough 'Detail' and 'Summary' section explaining the state change, providing links where appropriate.
+  3. Ensure the state changes are expected and match those seen in the Tenderly simulation.
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0x31E21180CF37994D0Dd35BF20eCAfe85563e1E13
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0x524A22C07597aBA5aE02Fe0a5735ca82277cc6DA
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0x5f2667d343Ef0681621fDA2d80682C1903672751
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0x88CfEB061c2F752E100dFA01fA29F12F32D19cB3
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0xC1D449c21883f05451C3Cec0c1ed22d876eB0289
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0xc92831eB4544053Dc330AB2cD4164e1EB3157A8E
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0xE4A8f005Bc30Ebd2B2eBb69843BAEF97C597Dc00
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0xef77AE71ff7F533970910342C71692a3Bdc74eAc
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0xef77AE71ff7F533970910342C71692a3Bdc74eAc
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0xef77AE71ff7F533970910342C71692a3Bdc74eAc
+  
+  TASK TRANSFERS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  No ETH or ERC20 transfers.
+  
+  TASK STATE CHANGES
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ━━━━━ Attention: Copy content below this line into the VALIDATION.md file. ━━━━━
+  
+  ---
+  
+### `0x31e21180cf37994d0dd35bf20ecafe85563e1e13` (<TODO: enter contract name>) 
+  
+- **Key:**          `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
+  - **Decoded Kind:** `address`
+  - **Before:** `0x7f1d12fB2911EB095278085f721e644C1f675696`
+  - **After:** `0x74f1aC50EB0BE98853805D381C884f5f9abDEcf9`
+  - **Summary:** ERC-1967 implementation slot
+  - **Detail:** Standard slot for storing the implementation address in a proxy contract that follows the ERC-1967 standard.
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+  ---
+  
+### `0x524a22c07597aba5ae02fe0a5735ca82277cc6da` (<TODO: enter contract name>) 
+  
+- **Key:**          `0x515216935740e67dfdda5cf8e248ea32b3277787818ab59153061ac875c9385e`
+  - **Before:** `0x00000000000000000000000022d12e0faebd62d429514a65ebae32dd316c12d6`
+  - **After:** `0x000000000000000000000000b686f13aff1e427a1f993f29ab0f2e7383729fe0`
+  - **Summary:** 
+  - **Detail:** 
+  
+**<TODO: Slot was not automatically decoded. Please provide a summary with thorough detail then remove this line.>**
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+  ---
+  
+### `0x5f2667d343ef0681621fda2d80682c1903672751` (<TODO: enter contract name>) 
+  
+- **Key:**          `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
+  - **Decoded Kind:** `address`
+  - **Before:** `0x381E729FF983FA4BCEd820e7b922d79bF653B999`
+  - **After:** `0x7Cf803296662e8C72A6C1d6450572209aCF7f202`
+  - **Summary:** ERC-1967 implementation slot
+  - **Detail:** Standard slot for storing the implementation address in a proxy contract that follows the ERC-1967 standard.
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+  ---
+  
+### `0x88cfeb061c2f752e100dfa01fa29f12f32d19cb3` (<TODO: enter contract name>) 
+  
+- **Key:**          `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
+  - **Decoded Kind:** `address`
+  - **Before:** `0x5493f4677A186f64805fe7317D6993ba4863988F`
+  - **After:** `0x8ee6fB13c6c9a7e401531168E196Fbf8b05cEabB`
+  - **Summary:** ERC-1967 implementation slot
+  - **Detail:** Standard slot for storing the implementation address in a proxy contract that follows the ERC-1967 standard.
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+  ---
+  
+### `0xc1d449c21883f05451c3cec0c1ed22d876eb0289` (<TODO: enter contract name>) 
+  
+- **Key:**          `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
+  - **Decoded Kind:** `address`
+  - **Before:** `0xe32B192fb1DcA88fCB1C56B3ACb429e32238aDCb`
+  - **After:** `0x61525EaaCDdB97D9184aFc205827E6A4fd0Bf62A`
+  - **Summary:** ERC-1967 implementation slot
+  - **Detail:** Standard slot for storing the implementation address in a proxy contract that follows the ERC-1967 standard.
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+  ---
+  
+### `0xc92831eb4544053dc330ab2cd4164e1eb3157a8e` (<TODO: enter contract name>) 
+  
+- **Key:**          `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
+  - **Decoded Kind:** `address`
+  - **Before:** `0xCe28685EB204186b557133766eCA00334EB441E4`
+  - **After:** `0xb08Cc720F511062537ca78BdB0AE691F04F5a957`
+  - **Summary:** ERC-1967 implementation slot
+  - **Detail:** Standard slot for storing the implementation address in a proxy contract that follows the ERC-1967 standard.
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+  ---
+  
+### `0xe4a8f005bc30ebd2b2ebb69843baef97c597dc00` (<TODO: enter contract name>) 
+  
+- **Key:**          `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
+  - **Decoded Kind:** `address`
+  - **Before:** `0x2bFE4A5Bd5A41e9d848d843ebCDFa15954e9A557`
+  - **After:** `0x2fA28989fc559836E9d66dFf3010C7F7f41c65ED`
+  - **Summary:** ERC-1967 implementation slot
+  - **Detail:** Standard slot for storing the implementation address in a proxy contract that follows the ERC-1967 standard.
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+  ---
+  
+### `0xef77ae71ff7f533970910342c71692a3bdc74eac` (<TODO: enter contract name>) 
+  
+- **Key:**          `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
+  - **Decoded Kind:** `address`
+  - **Before:** `0x33D1e8571a85a538ed3D5A4d88f46C112383439D`
+  - **After:** `0x74Fac1D45B98bae058F8F566201c9A81B85C7D50`
+  - **Summary:** ERC-1967 implementation slot
+  - **Detail:** Standard slot for storing the implementation address in a proxy contract that follows the ERC-1967 standard.
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+- **Key:**          `0x4d5a9bd2e41301728d41c8e705190becb4e74abe869f75bdb405b63716a35f9e`
+  - **Before:** `0x00000000000000000000000085b8e387e0f3856594c9872df205a7cce76fea2d`
+  - **After:** `0x0000000000000000000000004eaa96adfcda161017b725eadde9d96a843fdcf5`
+  - **Summary:** 
+  - **Detail:** 
+  
+**<TODO: Slot was not automatically decoded. Please provide a summary with thorough detail then remove this line.>**
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+- **Key:**          `0xffdfc1249c027f9191656349feb0761381bb32c9f557e01f419fd08754bf5a1b`
+  - **Before:** `0x0000000000000000000000007f1908f487c499ef2d7c5c684e1f03c1ec1f335f`
+  - **After:** `0x000000000000000000000000f5a2701c3cb1fc8f153c98995febb735babf4dfc`
+  - **Summary:** 
+  - **Detail:** 
+  
+**<TODO: Slot was not automatically decoded. Please provide a summary with thorough detail then remove this line.>**
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+  ---
+  
+### `0xfb0f8937a0d6999c67e8a01310ebf7fe1859205f` (Unknown (GnosisSafe)) 
+  
+- **Key:**          `0x0000000000000000000000000000000000000000000000000000000000000005`
+  - **Decoded Kind:** `uint256`
+  - **Before:** `41`
+  - **After:** `42`
+  - **Summary:** nonce
+  - **Detail:** 
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  ━━━━━ Attention: Copy content above this line into the VALIDATION.md file. ━━━━━
+  
+  TASK CALLDATA
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  0x82ad56cb0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000120000000000000000000000000704d236a529d7488669ff0627988e9ff7f3a1ecf000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000044b0b807eb000000000000000000000000c92831eb4544053dc330ab2cd4164e1eb3157a8e000000000000000000000000664e70e3d58eee0eef8b6b192015f43ab732300700000000000000000000000000000000000000000000000000000000000000000000000000000000704d236a529d7488669ff0627988e9ff7f3a1ecf0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a4ff2dd5a100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000e4a8f005bc30ebd2b2ebb69843baef97c597dc000000000000000000000000004f0bb1e5f8d98078636f9c38af61128381762dbd038512e02c4c3f7bdaec27d00edf55b7155e0905301e1a88083e4e0a6764d54c00000000000000000000000000000000000000000000000000000000
+  
+  
+  SAFE (DEPTH: 0)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Safe Address:    SONEIUM_DEVNET_ProxyAdminOwner @0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F
+  Safe Hash:       0xaad49bbdc26c39cb5d0172baf39050f06e262e76fb87bbac1fbe72a8d76443b6
+  Domain Hash:     0xbb7710987add9bc4f5949e44bc3405df5cbd2c021caeb85ef000e46a8ef2c077
+  Message Hash:    0x9b16f788dc1dd9b391d8521cc29d91389cc4fe814526308eea3d61599745f2db
+  
+  DATA TO SIGN
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  vvvvvvvv
+  0x1901bb7710987add9bc4f5949e44bc3405df5cbd2c021caeb85ef000e46a8ef2c0779b16f788dc1dd9b391d8521cc29d91389cc4fe814526308eea3d61599745f2db
+  ^^^^^^^^
+
+  
+  ATTENTION SIGNERS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Please verify that the 'Data to sign' displayed above matches:
+  1. The data shown in the Tenderly simulation.
+  2. The data shown on your hardware wallet.
+  This is a critical step. Do not skip this verification.
+  
+  OP-TXVERIFY LINK
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  To verify this transaction, run `op-txverify qr` on your machine, then open the following link on your mobile device: https://op-txverify.optimism.io/?tx=ewogICAic2FmZSI6ICIweEZCMEY4OTM3QTBkNjk5OUM2N0U4YTAxMzEwZUJmN2ZlMTg1OTIwNUYiLAogICAgInNhZmVfdmVyc2lvbiI6ICIxLjQuMSIsCiAgICJjaGFpbiI6IDExMTU1MTExLAogICAidG8iOiAiMHg5M2RjNDgwOTQwNTg1RDk5NjFiZmNFYWI1ODEyNGZGRDNkNjBmNzZhIiwKICAgInZhbHVlIjogMCwKICAgImRhdGEiOiAiMHg4MmFkNTZjYjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA0MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA3MDRkMjM2YTUyOWQ3NDg4NjY5ZmYwNjI3OTg4ZTlmZjdmM2ExZWNmMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDQ0YjBiODA3ZWIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBjOTI4MzFlYjQ1NDQwNTNkYzMzMGFiMmNkNDE2NGUxZWIzMTU3YThlMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNjY0ZTcwZTNkNThlZWUwZWVmOGI2YjE5MjAxNWY0M2FiNzMyMzAwNzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNzA0ZDIzNmE1MjlkNzQ4ODY2OWZmMDYyNzk4OGU5ZmY3ZjNhMWVjZjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBhNGZmMmRkNWExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDBlNGE4ZjAwNWJjMzBlYmQyYjJlYmI2OTg0M2JhZWY5N2M1OTdkYzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNGYwYmIxZTVmOGQ5ODA3ODYzNmY5YzM4YWY2MTEyODM4MTc2MmRiZDAzODUxMmUwMmM0YzNmN2JkYWVjMjdkMDBlZGY1NWI3MTU1ZTA5MDUzMDFlMWE4ODA4M2U0ZTBhNjc2NGQ1NGMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCIsCiAgICJvcGVyYXRpb24iOiAxLAogICAic2FmZV90eF9nYXMiOiAwLAogICAiYmFzZV9nYXMiOiAwLAogICAiZ2FzX3ByaWNlIjogMCwKICAgImdhc190b2tlbiI6ICIweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLAogICAicmVmdW5kX3JlY2VpdmVyIjogIjB4MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCIsCiAgICJub25jZSI6IDQxCn0=
+  
+  TENDERLY SIMULATION DATA
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+Simulation link:
+  https://dashboard.tenderly.co/TENDERLY_USERNAME/TENDERLY_PROJECT/simulator/new?network=11155111&contractAddress=0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F&from=0x1edae2A7C9ECF37319D4E113588d946e9901F5ea&stateOverrides=%5B%7B"contractAddress":"0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F","storage":%5B%7B"key":"0x0000000000000000000000000000000000000000000000000000000000000005","value":"0x0000000000000000000000000000000000000000000000000000000000000029"%7D%5D%7D%5D&gas=16700000&rawFunctionInput=0x6a76120200000000000000000000000093dc480940585d9961bfceab58124ffd3d60f76a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042000000000000000000000000000000000000000000000000000000000000002a482ad56cb0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000120000000000000000000000000704d236a529d7488669ff0627988e9ff7f3a1ecf000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000044b0b807eb000000000000000000000000c92831eb4544053dc330ab2cd4164e1eb3157a8e000000000000000000000000664e70e3d58eee0eef8b6b192015f43ab732300700000000000000000000000000000000000000000000000000000000000000000000000000000000704d236a529d7488669ff0627988e9ff7f3a1ecf0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a4ff2dd5a100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000e4a8f005bc30ebd2b2ebb69843baef97c597dc000000000000000000000000004f0bb1e5f8d98078636f9c38af61128381762dbd038512e02c4c3f7bdaec27d00edf55b7155e0905301e1a88083e4e0a6764d54c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000410000000000000000000000001edae2a7c9ecf37319d4e113588d946e9901f5ea00000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000

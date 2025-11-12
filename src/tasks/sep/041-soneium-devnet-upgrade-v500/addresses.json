@@ -11,6 +11,9 @@
     "PermissionedDelayedWETHProxy": "0x3E3A920043D2201FcbB89F72843A53e7453f0e8D",
     "AnchorStateRegistryProxy": "0x4e61ff0524bb9d1ec8f3fb5e42d196bdad030f5e",
     "AddressManager": "0x524a22c07597aba5ae02fe0a5735ca82277cc6da",
-    "L1ERC721BridgeProxy": "0x31e21180cf37994d0dd35bf20ecafe85563e1e13"
+    "L1ERC721BridgeProxy": "0x31e21180cf37994d0dd35bf20ecafe85563e1e13",
+    "SuperchainConfig": "0xc92831eB4544053Dc330AB2cD4164e1EB3157A8E",
+    "OptimismMintableERC20FactoryProxy": "0x88cfeb061c2f752e100dfa01fa29f12f32d19cb3",
+    "Challenger": "0x2D5cD08643086a42b0BCA5Adb1D755e80Cd5FE55"
   }
 }
