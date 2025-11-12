@@ -1,0 +1,119 @@
+SIMULATE_WITHOUT_LEDGER=1 just --dotenv-path $(pwd)/.env simulate
+                              
+        superchain-ops        
+                              
+Simulating without ledger using first owner from safe 0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F: 0x1edae2A7C9ECF37319D4E113588d946e9901F5ea
+⏳ Simulating task: 039-soneium-upgrade-superchainconfig-v410 for network: 'sep' on default safes
+
+[⠊] Compiling...
+No files changed, compilation skipped
+Script ran successfully.
+
+== Logs ==
+  [INFO] SuperchainAddressRegistry: Chain Soneium devnet not found in superchain registry, using fallback path src/tasks/sep/039-soneium-upgrade-superchainconfig-v410/addresses.json
+  Passing 30000000 gas to execTransaction (from env or gasleft)
+  
+  
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                   WELCOME TO SUPERCHAIN-OPS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+  ATTENTION TASK DEVELOPERS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  To properly document the task state changes, please follow these steps:
+  1. Copy and paste the state changes printed below into the VALIDATION.md file.
+  2. For each task, write a thorough 'Detail' and 'Summary' section explaining the state change, providing links where appropriate.
+  3. Ensure the state changes are expected and match those seen in the Tenderly simulation.
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0xc92831eB4544053Dc330AB2cD4164e1EB3157A8E
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0xc92831eB4544053Dc330AB2cD4164e1EB3157A8E
+  [WARN] Target address not found in superchain-registry (this message is safe to ignore): 0xc92831eB4544053Dc330AB2cD4164e1EB3157A8E
+  
+  TASK TRANSFERS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  No ETH or ERC20 transfers.
+  
+  TASK STATE CHANGES
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ━━━━━ Attention: Copy content below this line into the VALIDATION.md file. ━━━━━
+  
+  ---
+  
+### `0xc92831eb4544053dc330ab2cd4164e1eb3157a8e` (<TODO: enter contract name>) 
+  
+- **Key:**          `0x0000000000000000000000000000000000000000000000000000000000000000`
+  - **Before:** `0x0000000000000000000000000000000000000000000000000000000000000001`
+  - **After:** `0x00000000000000000000fb0f8937a0d6999c67e8a01310ebf7fe1859205f0002`
+  - **Summary:** 
+  - **Detail:** 
+  
+**<TODO: Slot was not automatically decoded. Please provide a summary with thorough detail then remove this line.>**
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+- **Key:**          `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
+  - **Decoded Kind:** `address`
+  - **Before:** `0x4da82a327773965b8d4D85Fa3dB8249b387458E7`
+  - **After:** `0xCe28685EB204186b557133766eCA00334EB441E4`
+  - **Summary:** ERC-1967 implementation slot
+  - **Detail:** Standard slot for storing the implementation address in a proxy contract that follows the ERC-1967 standard.
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+- **Key:**          `0xd30e835d3f35624761057ff5b27d558f97bd5be034621e62240e5c0b784abe68`
+  - **Decoded Kind:** `address`
+  - **Before:** `0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F`
+  - **After:** `0x0000000000000000000000000000000000000000`
+  - **Summary:** Guardian address
+  - **Detail:** Unstructured storage slot for the address of the superchain guardian.
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  
+  ---
+  
+### `0xfb0f8937a0d6999c67e8a01310ebf7fe1859205f` (Unknown (GnosisSafe)) 
+  
+- **Key:**          `0x0000000000000000000000000000000000000000000000000000000000000005`
+  - **Decoded Kind:** `uint256`
+  - **Before:** `39`
+  - **After:** `40`
+  - **Summary:** nonce
+  - **Detail:** 
+  
+**<TODO: Insert links for this state change then remove this line.>**
+  ━━━━━ Attention: Copy content above this line into the VALIDATION.md file. ━━━━━
+  
+  TASK CALLDATA
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  0x82ad56cb000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000d07a89cf19869ce185a5ec173568ae8acd5d8c02000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000044b0b807eb000000000000000000000000c92831eb4544053dc330ab2cd4164e1eb3157a8e000000000000000000000000664e70e3d58eee0eef8b6b192015f43ab732300700000000000000000000000000000000000000000000000000000000
+  
+  
+  SAFE (DEPTH: 0)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Safe Address:    SONEIUM_DEVNET_ProxyAdminOwner @0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F
+  Safe Hash:       0x1034afd1ff14664a0f35c5c392f9b6626da3ae8cc705a2f5fde4170f7c68cddc
+  Domain Hash:     0xbb7710987add9bc4f5949e44bc3405df5cbd2c021caeb85ef000e46a8ef2c077
+  Message Hash:    0x8861bd404ba0669b1125aeee4bdb651d45f6c58532e0e5ee60366f42214c86c0
+  
+  DATA TO SIGN
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  vvvvvvvv
+  0x1901bb7710987add9bc4f5949e44bc3405df5cbd2c021caeb85ef000e46a8ef2c0778861bd404ba0669b1125aeee4bdb651d45f6c58532e0e5ee60366f42214c86c0
+  ^^^^^^^^
+
+  
+  ATTENTION SIGNERS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Please verify that the 'Data to sign' displayed above matches:
+  1. The data shown in the Tenderly simulation.
+  2. The data shown on your hardware wallet.
+  This is a critical step. Do not skip this verification.
+  
+  OP-TXVERIFY LINK
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  To verify this transaction, run `op-txverify qr` on your machine, then open the following link on your mobile device: https://op-txverify.optimism.io/?tx=ewogICAic2FmZSI6ICIweEZCMEY4OTM3QTBkNjk5OUM2N0U4YTAxMzEwZUJmN2ZlMTg1OTIwNUYiLAogICAgInNhZmVfdmVyc2lvbiI6ICIxLjQuMSIsCiAgICJjaGFpbiI6IDExMTU1MTExLAogICAidG8iOiAiMHg5M2RjNDgwOTQwNTg1RDk5NjFiZmNFYWI1ODEyNGZGRDNkNjBmNzZhIiwKICAgInZhbHVlIjogMCwKICAgImRhdGEiOiAiMHg4MmFkNTZjYjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGQwN2E4OWNmMTk4NjljZTE4NWE1ZWMxNzM1NjhhZThhY2Q1ZDhjMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNDRiMGI4MDdlYjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMGM5MjgzMWViNDU0NDA1M2RjMzMwYWIyY2Q0MTY0ZTFlYjMxNTdhOGUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA2NjRlNzBlM2Q1OGVlZTBlZWY4YjZiMTkyMDE1ZjQzYWI3MzIzMDA3MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLAogICAib3BlcmF0aW9uIjogMSwKICAgInNhZmVfdHhfZ2FzIjogMCwKICAgImJhc2VfZ2FzIjogMCwKICAgImdhc19wcmljZSI6IDAsCiAgICJnYXNfdG9rZW4iOiAiMHgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwKICAgInJlZnVuZF9yZWNlaXZlciI6ICIweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLAogICAibm9uY2UiOiAzOQp9
+  
+  TENDERLY SIMULATION DATA
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+Simulation link:
+  https://dashboard.tenderly.co/TENDERLY_USERNAME/TENDERLY_PROJECT/simulator/new?network=11155111&contractAddress=0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F&from=0x1edae2A7C9ECF37319D4E113588d946e9901F5ea&stateOverrides=%5B%7B"contractAddress":"0xFB0F8937A0d6999C67E8a01310eBf7fe1859205F","storage":%5B%7B"key":"0x0000000000000000000000000000000000000000000000000000000000000005","value":"0x0000000000000000000000000000000000000000000000000000000000000027"%7D%5D%7D%5D&gas=30000000&rawFunctionInput=0x6a76120200000000000000000000000093dc480940585d9961bfceab58124ffd3d60f76a0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002c0000000000000000000000000000000000000000000000000000000000000014482ad56cb000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000d07a89cf19869ce185a5ec173568ae8acd5d8c02000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000044b0b807eb000000000000000000000000c92831eb4544053dc330ab2cd4164e1eb3157a8e000000000000000000000000664e70e3d58eee0eef8b6b192015f43ab7323007000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000410000000000000000000000001edae2a7c9ecf37319d4e113588d946e9901f5ea00000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000
